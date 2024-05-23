@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let name = String(prompt("enter your name :-"))
+        let Guj = Number(prompt("enter your Gujarati marks :-"))
+        let math = Number(prompt("enter your  Maths marks :-"))
+        let eng = Number(prompt("enter your  English marks :-"))
+        let hind = Number(prompt("enter your  Hindi marks :-"))
+        let soci = Number(prompt("enter your  Sociale since marks :-"))
+        let since = Number(prompt("enter your  Sinces marks :-"))
+        let total;
+        let perset;
+        if (Guj >= 100) {
+            document.write("Gujarati mark incorect <br>")
+        } else if (math >= 100) {
+            document.write("Maths mark incorect <br>")
+        } else if (eng >= 100) {
+            document.write("English mark incorect <br>")
+        } else if (hind >= 100) {
+            document.write("Hindi mark incorect <br>")
+        } else if (soci >= 100) {
+            document.write("Socialesince mark incorect <br>")
+        } else if (since >= 100) {
+            document.write("Since mark incorect <br>")
+        } else {
+            total = Guj + math + eng + hind + soci + since
+            perset = total / 600 * 100;
+            if (perset >= 90) {
+                document.write(`Congraculations ${name} Your are a pass with A1 grad and ${perset} persenteg`)
+            } else
+                if (perset >= 80) {
+                    document.write(`Congraculations ${name} Your are a pass with A2 grad and ${perset} persenteg`)
+                } else
+                    if (perset >= 70) {
+                        document.write(`Congraculations ${name} Your are a pass with B1 grad and ${perset} persenteg`)
+                    } else
+                        if (perset >= 60) {
+                            document.write(`Congraculations ${name} Your are a pass with B2 grad and ${perset} persenteg`)
+                        } else
+                            if (perset >= 50) {
+                                document.write(`Congraculations ${name} Your are a pass with C1 grad and ${perset} persenteg`)
+                            } else
+                                if (perset >= 40) {
+                                    document.write(`Congraculations ${name} Your are a pass with C2 grad and ${perset} persenteg`)
+                                } else if (perset >= 33) {
+                                    document.write(`Congraculations ${name} Your are a pass with D grad and ${perset} persenteg`)
+                                } else {
+                                    document.write(` Sorry ${name} Your are a  Fail with F grad and ${perset} persenteg`)
+                                }
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let a = Number(prompt("Enter A number :-"))
+        let b = Number(prompt("Enter B number :-"))
+        let c = Number(prompt("Enter C number :-"))
+        let d = Number(prompt("Enter D number :-"))
+
+        if (a > b) {
+            if (a > c) {
+                if (a > d) {
+                    document.write("A is big")
+
+                } else {
+                    document.write("D is big")
+                }
+            } else {
+                if (c > d) {
+                    document.write("C is big")
+
+                } else {
+                    document.write("D is big")
+
+                }
+            }
+        } else {
+            if (b > c) {
+                if (b > d) {
+                    document.write("B is big")
+                } else {
+                    document.write("D is big")
+                }
+            } else {
+                if (c >d) {
+                    document.write("C is big")
+                } else {
+                    document.write("D is big")
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
